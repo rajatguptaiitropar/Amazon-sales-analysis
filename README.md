@@ -1,41 +1,92 @@
-Amazon Sales Analysis 📈
 
+📊 Amazon Sales Analysis – Diwali Sales Dataset
 
-📝 Project Description
+This project analyzes the Diwali sales data of Amazon to understand customer purchasing behavior, product category performance, and market trends. The insights aim to support businesses in making data-driven decisions to improve marketing and increase revenue.
 
+📁 Project Overview
 
-This project provides a comprehensive analysis of an Amazon sales dataset using Python. The primary goal is to clean and process raw sales data, perform exploratory data analysis (EDA) to identify patterns and trends, and extract actionable insights. The analysis focuses on key business questions related to sales performance, geographical distribution, product category success, and order fulfillment, demonstrating a full data analysis workflow from raw data to business intelligence.
+The project includes:
 
-🛠️ Technologies Used
-Python: Core programming language for the analysis.
+Data loading and preprocessing
 
-Pandas: For high-performance data manipulation, cleaning, and aggregation.
+Exploratory data analysis (EDA)
 
-Matplotlib & Seaborn: For creating insightful and visually appealing static plots.
+Visualization of customer demographics and spending patterns
 
-SQL (via pandasql): To demonstrate database querying skills on the DataFrame.
+Identification of high-performing states, occupations, and product categories
 
-Jupyter Notebook / Google Colab: As the development environment for interactive analysis.
+🔧 Technologies Used
+Tool	Purpose
+Python	Overall programming
+Pandas	Data cleaning and manipulation
+NumPy	Numerical operations
+Matplotlib / Seaborn	Data visualization
+Jupyter Notebook / Google Colab	Interactive analysis environment
+📂 Dataset Description
 
-✨ Key Features & Analysis
-Data Cleaning: Rigorous preprocessing of the dataset to handle missing values, correct data types, and standardize column names for consistency.
+Name: Diwali Sales Data
+Key Features:
 
-Sales Trend Analysis: A time-series analysis to visualize sales performance over the given period, identifying peak months and sales cycles.
+Customer demographics → Gender, Age Group, Occupation, State
 
-Geographical Insights: Identification of the top 10 highest-revenue generating states to inform regional marketing and logistics strategies.
+Order details → Products, Orders, Amount
 
-Product Category Performance: Analysis of the most popular and profitable product categories by both sales volume and order count.
+Purchase patterns during Diwali festive season
 
-Order Fulfillment Analysis: A breakdown of order statuses (e.g., Shipped, Cancelled, Delivered) to evaluate the efficiency of the fulfillment pipeline.
+📌 Workflow of the Analysis
+✔️ 1. Data Import & Inspection
 
-SQL-Based Querying: In-notebook SQL queries to extract specific metrics like average order value and sales performance by shipping service level.
+Load CSV using pandas
 
+View data using .head(), .shape(), .info(), .describe()
 
-💡 Key Insights Discovered
-The analysis successfully pinpointed Maharashtra, Karnataka, and Uttar Pradesh as the top 3 states by sales, highlighting them as key markets for targeted growth.
+✔️ 2. Data Cleaning
 
-T-shirts, Kurtas, and Sets were identified as the leading product categories, suggesting they are major drivers of revenue and should be prioritized in inventory and marketing.
+Identify and remove null values using dropna()
 
-A significant portion of orders are successfully shipped, but the analysis of cancelled orders provides an opportunity to investigate and reduce pre-fulfillment cancellations.
+Convert Amount column to integer using .astype(int)
 
-The average order value provides a baseline for customer spending, which can be used to measure the effectiveness of upselling and cross-selling campaigns.
+✔️ 3. Exploratory Data Analysis (EDA)
+
+Multiple visualizations were performed using Seaborn and Matplotlib to identify customer trends:
+
+Question Explored	Findings
+Which gender buys more?	Females placed more orders and spent more
+Which age group spends the most?	26–35 age group contributed the highest sales
+Which states generate maximum sales?	Uttar Pradesh, Maharashtra & Karnataka lead in revenue and orders
+Which occupation category buys more?	IT, Healthcare & Aviation employees contributed the highest purchases
+Which product categories are most successful?	Clothing & Food items lead in order count; Electronics leads in total revenue
+🧠 Key Insights
+
+Women aged 26–35 are the prime customers during Diwali sales
+
+Most buyers work in IT, Healthcare & Aviation sectors
+
+Electronics, Clothing & Food are the most profitable product categories
+
+Uttar Pradesh, Maharashtra & Karnataka drive major business
+
+These insights can help businesses tailor promotional offers and inventory strategies to high-value customer segments.
+
+📑 Conclusion
+
+The Diwali sales analysis provides a clear picture of:
+
+Who buys the most
+
+What they buy the most
+
+Where the major markets are
+
+These findings support targeted advertising, stock planning, and better marketing decisions.
+
+🚀 Future Scope
+
+Potential improvements for future work:
+
+Forecast future sales using machine learning
+
+Customer segmentation using clustering
+
+Market basket analysis for frequently bought product combinations
+
